@@ -28,4 +28,12 @@ class SinResultadosViewController: UIViewController {
         
     }
     
+    @IBAction func volver(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "volver", sender: nil)
+    }
+    
+    @IBAction func buscar(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "buscar", sender: nil)
+    }
+    
 }

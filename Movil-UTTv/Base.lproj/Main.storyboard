@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoFinalRedondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="0dr-qC-IcZ">
-                                <rect key="frame" x="10" y="249" width="394" height="920"/>
+                                <rect key="frame" x="10" y="249" width="394" height="408"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -33,6 +33,7 @@
                     </view>
                     <connections>
                         <segue destination="ski-sO-8ht" kind="show" identifier="splash" id="kxX-dH-a0E"/>
+                        <segue destination="X6l-dh-jFH" kind="show" identifier="splash2" id="DUO-lK-K5i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -564,7 +565,7 @@
         <!--Sin Resultados View Controller-->
         <scene sceneID="0bg-CY-VDd">
             <objects>
-                <viewController id="rJ7-zn-OLk" customClass="SinResultadosViewController" customModule="Movil_UTTv" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="rJ7-zn-OLk" customClass="SinResultadosViewController" customModule="Movil_UTTv" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4qe-HH-wMh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -585,6 +586,9 @@
                                             <color key="baseForegroundColor" white="0.16698982600000001" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="baseBackgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buscar:" destination="rJ7-zn-OLk" eventType="touchUpInside" id="2eo-cP-lqb"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultados: Perros haciendo cosas." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeQ-NP-3G4">
                                         <rect key="frame" x="20" y="142" width="300" height="23"/>
@@ -633,6 +637,10 @@
                                         <rect key="frame" x="359" y="52" width="47" height="39"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="volver:" destination="rJ7-zn-OLk" eventType="touchUpInside" id="MuG-fA-EDJ"/>
+                                            <segue destination="X6l-dh-jFH" kind="show" identifier="volver" id="aMS-xn-IBt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.16698982600000001" alpha="1" colorSpace="calibratedWhite"/>
@@ -696,8 +704,10 @@
                             <constraint firstItem="OCC-Fn-oLt" firstAttribute="trailing" secondItem="Qzq-5E-vAa" secondAttribute="trailing" id="zb9-7z-EcQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fKw-e9-JBm"/>
                     <connections>
                         <outlet property="video" destination="KJc-Ml-Azo" id="upA-bT-gfc"/>
+                        <segue destination="DS4-x5-piJ" kind="show" identifier="buscar" id="YPH-ZM-F3z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vTI-C7-6Zz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -707,7 +717,7 @@
         <!--Resultados View Controller-->
         <scene sceneID="QNh-uP-bRn">
             <objects>
-                <viewController id="DS4-x5-piJ" customClass="ResultadosViewController" customModule="Movil_UTTv" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="DS4-x5-piJ" customClass="ResultadosViewController" customModule="Movil_UTTv" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6N1-47-f1a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -728,6 +738,9 @@
                                             <color key="baseForegroundColor" white="0.16698982600000001" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="baseBackgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buscar:" destination="DS4-x5-piJ" eventType="touchUpInside" id="PD9-eJ-TQ0"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultados: android." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoC-g4-BIh">
                                         <rect key="frame" x="20" y="142" width="300" height="23"/>
@@ -742,6 +755,10 @@
                                         <rect key="frame" x="359" y="52" width="47" height="39"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="volver:" destination="DS4-x5-piJ" eventType="touchUpInside" id="jPp-ot-b4r"/>
+                                            <segue destination="X6l-dh-jFH" kind="show" identifier="volver" id="DJk-rq-Gv5"/>
+                                        </connections>
                                     </button>
                                     <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ae4-EZ-8mf">
                                         <rect key="frame" x="18" y="195" width="378" height="180"/>
@@ -803,19 +820,104 @@
                             <constraint firstItem="Wlh-DW-JeR" firstAttribute="top" secondItem="6N1-47-f1a" secondAttribute="top" id="yFm-I4-HxS"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="YTt-2a-T11"/>
                     <connections>
                         <outlet property="video" destination="Ae4-EZ-8mf" id="12b-O1-QwK"/>
+                        <segue destination="rJ7-zn-OLk" kind="show" identifier="buscar" id="XMR-eh-nWj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DKm-o1-xTt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2040.5797101449277" y="68.973214285714278"/>
         </scene>
+        <!--Buscador View Controller-->
+        <scene sceneID="Sha-Ka-AvJ">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="X6l-dh-jFH" customClass="BuscadorViewController" customModule="Movil_UTTv" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CKG-Nj-0dy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q8A-Yp-GIE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K4r-SW-oR4">
+                                        <rect key="frame" x="0.0" y="121" width="414" height="3"/>
+                                        <color key="backgroundColor" red="0.92509633300000005" green="0.81723362209999995" blue="0.2298905551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.92509633300000005" green="0.81723362209999995" blue="0.2298905551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtg-uQ-cD7">
+                                        <rect key="frame" x="8" y="52" width="340" height="37"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="¿Que buscara?">
+                                            <color key="baseForegroundColor" white="0.16698982600000001" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="baseBackgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buscar:" destination="X6l-dh-jFH" eventType="touchUpInside" id="nyH-vG-8PE"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cross.png" translatesAutoresizingMaskIntoConstraints="NO" id="g6Y-UL-2Sm">
+                                        <rect key="frame" x="349" y="43" width="65" height="59"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffP-Jv-3qt">
+                                        <rect key="frame" x="359" y="52" width="47" height="39"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.16698982600000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ffP-Jv-3qt" secondAttribute="trailing" constant="8" id="0lG-yP-JeZ"/>
+                                    <constraint firstItem="K4r-SW-oR4" firstAttribute="top" secondItem="xtg-uQ-cD7" secondAttribute="bottom" constant="32" id="0pY-15-gVK"/>
+                                    <constraint firstItem="g6Y-UL-2Sm" firstAttribute="top" secondItem="Q8A-Yp-GIE" secondAttribute="top" constant="43" id="2eH-uy-aFd"/>
+                                    <constraint firstItem="ffP-Jv-3qt" firstAttribute="leading" secondItem="xtg-uQ-cD7" secondAttribute="trailing" constant="11" id="3Ja-Fs-Gu8"/>
+                                    <constraint firstAttribute="bottom" secondItem="xtg-uQ-cD7" secondAttribute="bottom" constant="807" id="DlT-vo-DQN"/>
+                                    <constraint firstItem="K4r-SW-oR4" firstAttribute="top" secondItem="g6Y-UL-2Sm" secondAttribute="bottom" constant="19" id="Htf-QF-AGz"/>
+                                    <constraint firstItem="ffP-Jv-3qt" firstAttribute="top" secondItem="Q8A-Yp-GIE" secondAttribute="top" constant="52" id="JJe-M9-SQx"/>
+                                    <constraint firstAttribute="bottom" secondItem="K4r-SW-oR4" secondAttribute="bottom" constant="772" id="Qdi-e4-IC0"/>
+                                    <constraint firstAttribute="trailing" secondItem="g6Y-UL-2Sm" secondAttribute="trailing" id="USC-uP-ivC"/>
+                                    <constraint firstItem="g6Y-UL-2Sm" firstAttribute="leading" secondItem="xtg-uQ-cD7" secondAttribute="trailing" constant="1" id="blX-CG-oq6"/>
+                                    <constraint firstAttribute="trailing" secondItem="K4r-SW-oR4" secondAttribute="trailing" id="cb6-Sv-d4e"/>
+                                    <constraint firstItem="xtg-uQ-cD7" firstAttribute="leading" secondItem="Q8A-Yp-GIE" secondAttribute="leading" constant="8" id="hIO-wg-5xB"/>
+                                    <constraint firstItem="K4r-SW-oR4" firstAttribute="top" secondItem="ffP-Jv-3qt" secondAttribute="bottom" constant="30" id="iAk-Vm-UOg"/>
+                                    <constraint firstAttribute="trailing" secondItem="xtg-uQ-cD7" secondAttribute="trailing" constant="66" id="q8X-cC-LfB"/>
+                                    <constraint firstItem="K4r-SW-oR4" firstAttribute="leading" secondItem="Q8A-Yp-GIE" secondAttribute="leading" id="r46-uh-Jxl"/>
+                                    <constraint firstItem="xtg-uQ-cD7" firstAttribute="top" secondItem="Q8A-Yp-GIE" secondAttribute="top" constant="52" id="ub3-fZ-Tx4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RiX-2e-KrW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q8A-Yp-GIE" firstAttribute="trailing" secondItem="RiX-2e-KrW" secondAttribute="trailing" id="0vG-t4-qfe"/>
+                            <constraint firstItem="Q8A-Yp-GIE" firstAttribute="top" secondItem="CKG-Nj-0dy" secondAttribute="top" id="ANy-ut-ukX"/>
+                            <constraint firstItem="Q8A-Yp-GIE" firstAttribute="width" secondItem="CKG-Nj-0dy" secondAttribute="width" id="Mnt-Dy-dub"/>
+                            <constraint firstItem="Q8A-Yp-GIE" firstAttribute="height" secondItem="CKG-Nj-0dy" secondAttribute="height" id="Sub-1q-jNZ"/>
+                            <constraint firstItem="Q8A-Yp-GIE" firstAttribute="leading" secondItem="RiX-2e-KrW" secondAttribute="leading" id="VFh-zO-4sY"/>
+                            <constraint firstAttribute="bottom" secondItem="Q8A-Yp-GIE" secondAttribute="bottom" id="aD7-6R-D7j"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gGc-qk-otd"/>
+                    <connections>
+                        <segue destination="DS4-x5-piJ" kind="show" identifier="resultados" id="1kX-kA-JC3"/>
+                        <segue destination="rJ7-zn-OLk" kind="show" identifier="sinresultados" id="70x-oc-NBi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="guk-6q-QWZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2041" y="773"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="DUO-lK-K5i"/>
+        <segue reference="1kX-kA-JC3"/>
+        <segue reference="70x-oc-NBi"/>
         <segue reference="gW3-Mi-shw"/>
         <segue reference="YaC-Gz-w4n"/>
-        <segue reference="Mu8-df-T0B"/>
+        <segue reference="kxX-dH-a0E"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="DislikeBlanco.png" width="400" height="400"/>

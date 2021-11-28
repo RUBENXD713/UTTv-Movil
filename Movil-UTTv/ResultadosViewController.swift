@@ -27,4 +27,14 @@ class ResultadosViewController: UIViewController {
         self.performSegue(withIdentifier: "video3", sender: nil)
         
     }
+    
+    @IBAction func volver(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "volver", sender: nil)
+    }
+    
+    
+    @IBAction func buscar(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "buscar", sender: nil)
+        
+    }
 }

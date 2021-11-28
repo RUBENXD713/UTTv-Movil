@@ -28,6 +28,7 @@
 		ABD3670F275359890023FBFC /* Video3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3670E275359890023FBFC /* Video3ViewController.swift */; };
 		ABD36711275364CD0023FBFC /* SinResultadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD36710275364CD0023FBFC /* SinResultadosViewController.swift */; };
 		ABD36713275368FB0023FBFC /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD36712275368FB0023FBFC /* cross.png */; };
+		ABF7EAD12753DFA400DA5B6B /* BuscadorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7EAD02753DFA400DA5B6B /* BuscadorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		ABD3670E275359890023FBFC /* Video3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video3ViewController.swift; sourceTree = "<group>"; };
 		ABD36710275364CD0023FBFC /* SinResultadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinResultadosViewController.swift; sourceTree = "<group>"; };
 		ABD36712275368FB0023FBFC /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		ABF7EAD02753DFA400DA5B6B /* BuscadorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscadorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				ABD3670E275359890023FBFC /* Video3ViewController.swift */,
 				ABD36710275364CD0023FBFC /* SinResultadosViewController.swift */,
 				ABC15F3327536EAF00E6F0E6 /* ResultadosViewController.swift */,
+				ABF7EAD02753DFA400DA5B6B /* BuscadorViewController.swift */,
 			);
 			path = "Movil-UTTv";
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				ABB4E18627506E8C00F5D38A /* ViewController.swift in Sources */,
 				ABB4E18227506E8C00F5D38A /* AppDelegate.swift in Sources */,
 				ABB4E18427506E8C00F5D38A /* SceneDelegate.swift in Sources */,
+				ABF7EAD12753DFA400DA5B6B /* BuscadorViewController.swift in Sources */,
 				AB98CD102751ACCF008D8586 /* Video2ViewController.swift in Sources */,
 				ABC15F3427536EAF00E6F0E6 /* ResultadosViewController.swift in Sources */,
 				ABB4E1B527509B7300F5D38A /* VideosController.swift in Sources */,
