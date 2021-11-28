@@ -8,12 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { timer in
+                self.performSegue(withIdentifier: "splash", sender: nil)
+            }
     }
 
-
+  
 }
 
