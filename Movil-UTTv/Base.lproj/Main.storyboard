@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Movil_UTTv" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Movil_UTTv" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,6 +29,7 @@
                             <constraint firstItem="0dr-qC-IcZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.951691" id="zYi-UV-agp"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="uku-oc-XtY"/>
                     <connections>
                         <segue destination="X6l-dh-jFH" kind="show" identifier="splash2" id="DUO-lK-K5i"/>
                         <segue destination="HcL-i1-mGi" kind="presentation" identifier="splash" modalPresentationStyle="fullScreen" id="Ps5-Ay-fIY"/>
@@ -212,6 +213,19 @@
                                             <segue destination="2i1-Hn-wm6" kind="show" identifier="video3" id="xwg-Ak-RGt"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33h-9p-8Ia">
+                                        <rect key="frame" x="367" y="52" width="36" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92509633300000005" green="0.81723362209999995" blue="0.2298905551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.backward.fill" catalog="system">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="Apa-fc-8mI"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.16698982600000001" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -384,6 +398,19 @@
                                         <connections>
                                             <action selector="video3:" destination="54J-R3-WWI" eventType="touchUpInside" id="o0i-qf-OCI"/>
                                             <segue destination="2i1-Hn-wm6" kind="show" identifier="video3" id="fE8-Ah-03s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td6-DU-jr2">
+                                        <rect key="frame" x="373" y="52" width="36" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92509633300000005" green="0.81723362209999995" blue="0.2298905551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.backward.fill" catalog="system">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="eDn-aP-9aU"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -639,6 +666,19 @@
                                             <segue destination="ski-sO-8ht" kind="show" identifier="video1" id="EA8-oJ-sEv"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jan-FK-4Bc">
+                                        <rect key="frame" x="367" y="52" width="36" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92509633300000005" green="0.81723362209999995" blue="0.2298905551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.backward.fill" catalog="system">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="jpa-k4-PJq"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.16698982600000001" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -796,7 +836,7 @@
                                         <buttonConfiguration key="configuration" style="plain"/>
                                         <connections>
                                             <action selector="volver:" destination="rJ7-zn-OLk" eventType="touchUpInside" id="MuG-fA-EDJ"/>
-                                            <segue destination="X6l-dh-jFH" kind="show" identifier="volver" id="aMS-xn-IBt"/>
+                                            <segue destination="X6l-dh-jFH" kind="show" id="AIC-Bv-JsH"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1022,6 +1062,9 @@
                                         <rect key="frame" x="359" y="52" width="47" height="39"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="6Oy-89-Lku"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.16698982600000001" alpha="1" colorSpace="calibratedWhite"/>
@@ -1060,7 +1103,6 @@
                     <navigationItem key="navigationItem" id="gGc-qk-otd"/>
                     <connections>
                         <segue destination="DS4-x5-piJ" kind="show" identifier="resultados" id="1kX-kA-JC3"/>
-                        <segue destination="rJ7-zn-OLk" kind="show" identifier="sinresultados" id="70x-oc-NBi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="guk-6q-QWZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1199,13 +1241,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KEn-hg-ixP"/>
-        <segue reference="rOf-g7-gkd"/>
-        <segue reference="1kX-kA-JC3"/>
-        <segue reference="70x-oc-NBi"/>
-        <segue reference="FGY-Go-yxz"/>
+        <segue reference="Ps5-Ay-fIY"/>
+        <segue reference="AIC-Bv-JsH"/>
+        <segue reference="YPH-ZM-F3z"/>
+        <segue reference="gW3-Mi-shw"/>
         <segue reference="YaC-Gz-w4n"/>
-        <segue reference="LlN-U8-NLG"/>
+        <segue reference="Mu8-df-T0B"/>
+        <segue reference="6Oy-89-Lku"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="DislikeBlanco.png" width="400" height="400"/>

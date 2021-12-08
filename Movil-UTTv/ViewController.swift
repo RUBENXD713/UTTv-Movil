@@ -12,7 +12,7 @@ class ViewController: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             
-            Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { timer in
+            Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { timer in
                 self.performSegue(withIdentifier: "splash", sender: nil)
             }
     }
