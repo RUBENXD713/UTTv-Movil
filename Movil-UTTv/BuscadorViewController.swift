@@ -12,7 +12,7 @@ class BuscadorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         // Do any additional setup after loading the view.
     }
     
@@ -26,6 +26,11 @@ class BuscadorViewController: UIViewController {
             self.performSegue(withIdentifier: "resultados", sender: nil)
         }
         
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     /*
     // MARK: - Navigation

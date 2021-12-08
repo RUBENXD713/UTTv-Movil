@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17DAE42B2760865D00D6C48B /* PrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DAE42A2760865D00D6C48B /* PrincipalView.swift */; };
+		17DAE42D27611CC600D6C48B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DAE42C27611CC600D6C48B /* loginViewController.swift */; };
+		17DAE42F27612CB300D6C48B /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DAE42E27612CB300D6C48B /* registerViewController.swift */; };
+		17DAE431276149D700D6C48B /* menuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DAE430276149D700D6C48B /* menuItems.swift */; };
 		AB98CD0D27516689008D8586 /* dislikeSeleccionado.png in Resources */ = {isa = PBXBuildFile; fileRef = AB98CD0B27516688008D8586 /* dislikeSeleccionado.png */; };
 		AB98CD0E27516689008D8586 /* likeSeleccionado.png in Resources */ = {isa = PBXBuildFile; fileRef = AB98CD0C27516689008D8586 /* likeSeleccionado.png */; };
 		AB98CD102751ACCF008D8586 /* Video2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB98CD0F2751ACCF008D8586 /* Video2ViewController.swift */; };
@@ -49,6 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17DAE42A2760865D00D6C48B /* PrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalView.swift; sourceTree = "<group>"; };
+		17DAE42C27611CC600D6C48B /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		17DAE42E27612CB300D6C48B /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		17DAE430276149D700D6C48B /* menuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuItems.swift; sourceTree = "<group>"; };
 		AB98CD0B27516688008D8586 /* dislikeSeleccionado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dislikeSeleccionado.png; sourceTree = "<group>"; };
 		AB98CD0C27516689008D8586 /* likeSeleccionado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likeSeleccionado.png; sourceTree = "<group>"; };
 		AB98CD0F2751ACCF008D8586 /* Video2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video2ViewController.swift; sourceTree = "<group>"; };
@@ -126,10 +134,14 @@
 			isa = PBXGroup;
 			children = (
 				ABB4E1B127506EA900F5D38A /* Recursos */,
+				17DAE430276149D700D6C48B /* menuItems.swift */,
 				ABB4E18127506E8C00F5D38A /* AppDelegate.swift */,
 				ABB4E18327506E8C00F5D38A /* SceneDelegate.swift */,
 				ABB4E18527506E8C00F5D38A /* ViewController.swift */,
 				ABB4E18727506E8C00F5D38A /* Main.storyboard */,
+				17DAE42A2760865D00D6C48B /* PrincipalView.swift */,
+				17DAE42C27611CC600D6C48B /* loginViewController.swift */,
+				17DAE42E27612CB300D6C48B /* registerViewController.swift */,
 				ABB4E18A27506E8E00F5D38A /* Assets.xcassets */,
 				ABB4E18C27506E8E00F5D38A /* LaunchScreen.storyboard */,
 				ABB4E18F27506E8E00F5D38A /* Info.plist */,
@@ -313,10 +325,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABD3670F275359890023FBFC /* Video3ViewController.swift in Sources */,
+				17DAE42D27611CC600D6C48B /* loginViewController.swift in Sources */,
 				ABD36711275364CD0023FBFC /* SinResultadosViewController.swift in Sources */,
+				17DAE42F27612CB300D6C48B /* registerViewController.swift in Sources */,
 				ABB4E18627506E8C00F5D38A /* ViewController.swift in Sources */,
+				17DAE431276149D700D6C48B /* menuItems.swift in Sources */,
 				ABB4E18227506E8C00F5D38A /* AppDelegate.swift in Sources */,
 				ABB4E18427506E8C00F5D38A /* SceneDelegate.swift in Sources */,
+				17DAE42B2760865D00D6C48B /* PrincipalView.swift in Sources */,
 				ABF7EAD12753DFA400DA5B6B /* BuscadorViewController.swift in Sources */,
 				AB98CD102751ACCF008D8586 /* Video2ViewController.swift in Sources */,
 				ABC15F3427536EAF00E6F0E6 /* ResultadosViewController.swift in Sources */,
@@ -499,6 +515,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HP8UCH6BR3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Movil-UTTv/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -526,6 +543,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HP8UCH6BR3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Movil-UTTv/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
