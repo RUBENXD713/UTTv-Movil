@@ -31,7 +31,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="uku-oc-XtY"/>
                     <connections>
-                        <segue destination="X6l-dh-jFH" kind="show" identifier="splash2" id="DUO-lK-K5i"/>
                         <segue destination="HcL-i1-mGi" kind="presentation" identifier="splash" modalPresentationStyle="fullScreen" id="Ps5-Ay-fIY"/>
                     </connections>
                 </viewController>
@@ -223,7 +222,7 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="Apa-fc-8mI"/>
+                                            <segue destination="HcL-i1-mGi" kind="presentation" id="aua-tM-Syx"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -410,7 +409,7 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="eDn-aP-9aU"/>
+                                            <segue destination="HcL-i1-mGi" kind="presentation" id="KMf-Od-eTl"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -676,7 +675,7 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="jpa-k4-PJq"/>
+                                            <segue destination="HcL-i1-mGi" kind="presentation" id="oBK-BT-tFn"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1063,7 +1062,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="6Oy-89-Lku"/>
+                                            <segue destination="HcL-i1-mGi" kind="presentation" id="rFv-gv-chf"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1120,12 +1119,12 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoFinalRedondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="3gR-K0-9AG">
                                 <rect key="frame" x="41.333333333333343" y="53.666666666666657" width="331.33333333333326" height="358.33333333333337"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Correo..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u8z-Te-Ypm">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u8z-Te-Ypm">
                                 <rect key="frame" x="41.333333333333343" y="472" width="331.33333333333326" height="53.666666666666629"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contraseña..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d2Q-ov-B0X">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d2Q-ov-B0X">
                                 <rect key="frame" x="41.333333333333343" y="585.66666666666663" width="331.33333333333326" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1222,7 +1221,7 @@
         <!--Navigation Controller-->
         <scene sceneID="MSl-jB-fzJ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HcL-i1-mGi" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="HcL-i1-mGi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zPU-WV-Fj2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1241,13 +1240,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KEn-hg-ixP"/>
+        <segue reference="rFv-gv-chf"/>
         <segue reference="AIC-Bv-JsH"/>
-        <segue reference="YPH-ZM-F3z"/>
-        <segue reference="gW3-Mi-shw"/>
+        <segue reference="1kX-kA-JC3"/>
+        <segue reference="xwg-Ak-RGt"/>
         <segue reference="YaC-Gz-w4n"/>
         <segue reference="Mu8-df-T0B"/>
-        <segue reference="6Oy-89-Lku"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="DislikeBlanco.png" width="400" height="400"/>
