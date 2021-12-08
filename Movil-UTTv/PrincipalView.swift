@@ -9,6 +9,9 @@ import SwiftUI
 import UIKit
 
 class principalViewController: UIViewController {
+    @IBOutlet weak var video: UIWebView!
+    @IBOutlet weak var video2: UIWebView!
+    //@IBOutlet weak var video3: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "UTTv"
@@ -17,6 +20,12 @@ class principalViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         configureItems()
         UINavigationBar.appearance().backgroundColor = UIColorFromHex(rgbValue: 0xE4CF4B)
+        let url = URL(string: "https://www.youtube.com/embed/uOXrCNRf4Xo")!
+        let url2 = URL(string: "https://www.youtube.com/embed/DRoGraU8pj0")!
+        //let url3 = URL(string: "https://www.youtube.com/embed/ZZlRs8ZNgk0")!
+        video.loadRequest(URLRequest(url: url))
+        video2.loadRequest(URLRequest(url: url2))
+        //video3.loadRequest(URLRequest(url: url3))
     }
     
     private func configureItems() {
